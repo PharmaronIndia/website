@@ -74,10 +74,8 @@
 						</div> <!-- .main-navigation -->
 						
 						<div class="social-links">
-							<a href="#"><i class="fa fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-google-plus"></i></a>
-							<a href="#"><i class="fa fa-pinterest"></i></a>
+							
+							<a href="index.html"><i class="fa fa-twitter"></i></a>
 						</div>
 						
 						<div class="mobile-navigation"></div>
@@ -98,30 +96,13 @@
 						
 					</li>
 				</ul>
-				<script>
-					document.querySelectorAll('.slides li').forEach((slide) => {
-  let bgImage = slide.getAttribute('data-bg-image');
-  
-  // Check for high-resolution screens
-  if (window.devicePixelRatio >= 3) {
-    bgImage = bgImage.replace('.jpg', '@3x.jpg');
-  } else if (window.devicePixelRatio >= 2) {
-    bgImage = bgImage.replace('.jpg', '@2x.jpg');
-  }
-
-  slide.style.backgroundImage = `url(${bgImage})`;
-  slide.style.backgroundSize = 'cover';
-  slide.style.backgroundPosition = 'center';
-});
-
-				</script>
 			</div> <!-- .hero-slider -->
 
 			<main class="main-content">
 				<div class="fullwidth-block greet-section">
 					<div class="container">
-						<h2 class="section-title">Welcome to <br> <span class="rimsha-title" >Pharmaron Pharmaceuticals</span> </h2>
-						<small class="section-subtitle">We Care For You </small>
+						<h2 class="section-title"><strong>Welcome to</strong><br> <span class="pharmaron-title" >Pharmaron Pharmaceuticals</span> </h2>
+						<small class="section-subtitle">We Care For You</small>
 
 						<div class="row">
 							<div class="col-md-6">
@@ -178,7 +159,7 @@
 
 				<div class="fullwidth-block" data-bg-color="#f1f1f1">
 					<div class="container">
-						<h2 class="section-title">Our Products</h2>
+						<h2 class="section-title"><strong>Our Products</strong></h2>
 						<!-- <div class="row news-list">
 							<div class="col-md-4">
 								<div class="news">
