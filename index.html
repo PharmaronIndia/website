@@ -98,6 +98,23 @@
 						
 					</li>
 				</ul>
+				<script>
+					document.querySelectorAll('.slides li').forEach((slide) => {
+  let bgImage = slide.getAttribute('data-bg-image');
+  
+  // Check for high-resolution screens
+  if (window.devicePixelRatio >= 3) {
+    bgImage = bgImage.replace('.jpg', '@3x.jpg');
+  } else if (window.devicePixelRatio >= 2) {
+    bgImage = bgImage.replace('.jpg', '@2x.jpg');
+  }
+
+  slide.style.backgroundImage = `url(${bgImage})`;
+  slide.style.backgroundSize = 'cover';
+  slide.style.backgroundPosition = 'center';
+});
+
+				</script>
 			</div> <!-- .hero-slider -->
 
 			<main class="main-content">
