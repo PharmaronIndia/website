@@ -1818,12 +1818,25 @@ form input[type="reset"]:focus {
   height: 0;
 }
 .hero-slider .slides li {
-  min-height: 580px;
-  float: left;
-  margin-right: -100%;
-  width: 100%;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-slider .slides li[data-bg-image="image0/hero-slider-1.jpg"] {
+    background-image: url('image0/hero-slider-1@2x.jpg');
+  }
+  .hero-slider .slides li[data-bg-image="image0/hero-slider-2.jpg"] {
+    background-image: url('image0/hero-slider-2@2x.jpg');
+  }
+  .hero-slider .slides li[data-bg-image="image0/hero-slider-3.jpg"] {
+    background-image: url('image0/hero-slider-3@2x.jpg');
+  }
+}
+
 }
 .hero-slider .slide-content {
   border-radius: 3px;
