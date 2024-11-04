@@ -73,19 +73,29 @@
 				
 			</header> <!-- .site-header -->
 
-			<div class="hero-slider">
-				<ul class="slides">
-					<li data-bg-image="image0/hero-slider-1.jpg">
-						
-					</li>
-					<li data-bg-image="image0/hero-slider-2.jpg">
-						
-					</li>
-					<li data-bg-image="image0/hero-slider-3.jpg">
-						
-					</li>
+			<div class="hero-slider" style="width: 100%; overflow: hidden;">
+				<ul class="slides" style="display: flex;">
+				  <li class="slide" style="width: 100vw; height: 50vh; background-image: url('image0/hero-slider-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></li>
+				  <li class="slide" style="width: 100vw; height: 50vh; background-image: url('image0/hero-slider-2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></li>
+				  <li class="slide" style="width: 100vw; height: 50vh; background-image: url('image0/hero-slider-3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"></li>
 				</ul>
-			</div> <!-- .hero-slider -->
+			  </div>
+			  
+			  <style>
+				/* High-resolution images for Retina displays and similar devices */
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+				  .slide:nth-child(1) {
+					background-image: url('image0/hero-slider-1@2x.jpg');
+				  }
+				  .slide:nth-child(2) {
+					background-image: url('image0/hero-slider-2@2x.jpg');
+				  }
+				  .slide:nth-child(3) {
+					background-image: url('image0/hero-slider-3@2x.jpg');
+				  }
+				}
+			  </style>
+			  <!-- .hero-slider -->
 
 			<main class="main-content">
 				<div class="fullwidth-block greet-section">
