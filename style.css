@@ -1887,28 +1887,29 @@ form input[type="reset"]:focus {
 }
 
 .fullwidth-block {
-  padding: 10px 0;
+  padding: 0px 0;
   
 }
 
 .section-title,
 .section-subtitle {
   font-weight: 300;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 5px;
+  margin-top: -20px;
   text-align: center;
   display: block;
 }
 
 .section-title {
   font-size: 48px;
-  font-size: 3em;
+  font-size: 2em;
+  color: #000;
 }
 
 .section-subtitle {
   font-size: 30px;
-  font-size: 1.875em;
-  color: #9ba1a6;
+  font-size: 1em;
+  color: #000000;
   margin-top: -50px;
   margin-bottom: 50px;
 }
